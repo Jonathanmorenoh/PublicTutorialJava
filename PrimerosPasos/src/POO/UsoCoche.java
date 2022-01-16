@@ -21,11 +21,28 @@ public class UsoCoche {
     
         //System.out.println("Este coche tiene: " + Renault.getAncho() + " de largo");
 
+        /*
         Renault.setColor("Rojo");
         
         Renault.setAsientosCuero("si");
         
         System.out.println(Renault.getComunes() + ", " + Renault.getColor() + " y " + Renault.dime_asientos() );
+        */
+        
+        CochePOO Coche = new CochePOO();
+        
+        Coche.setColor("Negro");
+        
+        CocheHerencia Coche2 = new CocheHerencia(7, 500);
+        
+        Coche2.setColor("Blanca");
+        
+        Coche2.setAsientosCuero("No");
+        
+        System.out.println(Coche.getComunes() + Coche.getColor());
+        
+        System.out.println(Coche2.getComunes() + Coche2.getColor() + Coche2.dimeDatos());
+    
     }
     
 }

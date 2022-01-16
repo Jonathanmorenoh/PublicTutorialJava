@@ -18,7 +18,7 @@ public class CochePOO {
     
     
     
-    //CONSTRUCTOR 
+    //CONSTRUCTOR --> Proporciona un estado inicial.
     
     public CochePOO (){
         
