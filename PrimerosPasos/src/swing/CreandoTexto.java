@@ -83,7 +83,7 @@ class LaminaTexto extends JPanel {
 
 
 /*
-USO CONSTRUCTORES ---> NombreConstructor NombreClase = new NombreConstructor(Parametros o vacio);
-USO DE METODOS --->     1 - STATIC --> NombreClase.NombreMetodo();    2- NO STATIC --> NombreMetodo();
+USO CONSTRUCTORES ---> NombreConstructor NombreNuevaClase = new NombreConstructor(Parametros o vacio); INSTANCIAR
+USO DE METODOS --->     1 - STATIC --> NombreNuevaClase.NombreMetodo();    2- NO STATIC --> NombreMetodo();
 USO DE CLASE -->    public class void NOMBRECLASE{} 
  */
