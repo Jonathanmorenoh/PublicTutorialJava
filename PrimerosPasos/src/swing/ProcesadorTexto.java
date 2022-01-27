@@ -4,12 +4,15 @@ import java.awt.BorderLayout;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JTextPane;
+import javax.swing.KeyStroke;
 
 public class ProcesadorTexto {
 
@@ -87,6 +90,7 @@ class LaminaProcesador extends JPanel {
         } else if (menu == "tamano") {
             tamano.add(elem_menu);
         }
+        elem_menu.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, InputEvent.CTRL_DOWN_MASK));
         elem_menu.addActionListener(new GestionEvento(rotulo, tipoLetra, estilos, tam));
     }
 
@@ -136,3 +140,19 @@ class LaminaProcesador extends JPanel {
     Font letras;
 
 }
+
+
+/*      ************ USO API ******************
+
+1- SE INSTANCIA LA CLASE CON UN CONSTRUCTOR
+
+    JToolBar mibarra = new JToolBar(ARGUMENTOS DEL CONSTRUCTOR);
+
+2- 
+
+
+
+
+
+
+*/

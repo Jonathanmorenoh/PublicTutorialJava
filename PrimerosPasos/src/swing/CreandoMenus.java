@@ -5,6 +5,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
+import javax.swing.JPopupMenu;
 
 public class CreandoMenus {
     
@@ -36,6 +37,18 @@ class ventanaMenu extends JFrame{
 class laminaMenu extends JPanel{
     
     public laminaMenu(){
+        
+        JPopupMenu emergente = new JPopupMenu();
+        JMenuItem opciones1 = new JMenuItem("Opcion 1");
+        JMenuItem opciones2 = new JMenuItem("Opcion 2");
+        JMenuItem opciones3 = new JMenuItem("Opcion 3");
+        
+        emergente.add(opciones1);
+        emergente.add(opciones2);
+        emergente.add(opciones3);
+        
+        setComponentPopupMenu(emergente);
+        
         
         JMenuBar mibarra = new JMenuBar();
         JMenu archivo = new JMenu("Archivo");
